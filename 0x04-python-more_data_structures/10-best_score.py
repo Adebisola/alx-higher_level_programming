@@ -5,8 +5,8 @@ def best_score(a_dictionary):
         return None
     x = list(a_dictionary.keys())[0]
     biggest_score = a_dictionary[x]
-    for key, value in a_dictionary.items():
-        if value > biggest_score:
-            biggest_score = value
-            x = key
-            return (x)
+    for k, v in a_dictionary.items():
+        if v > biggest_score:
+            biggest_score = v
+            x = k
+    return (x)
