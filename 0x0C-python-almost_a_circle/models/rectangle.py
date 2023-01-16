@@ -82,3 +82,11 @@ class Rectangle(Base):
             for symbol in range(self.__width):
                 print("#", end="")
             print('')
+
+    def __str__(self):
+        """Overrides __str__ method to return [Rectangle] (<id>)
+           <x>/<y> - <width>/<height>
+        """
+        return "[Rectangle] " + "(" + str(self.id) + ") " + str(self.__x)\
+               + "/" + str(self.__y) + " - " + str(self.__width)\
+               + "/" + str(self.__height)
