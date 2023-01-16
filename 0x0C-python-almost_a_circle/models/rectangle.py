@@ -90,7 +90,7 @@ class Rectangle(Base):
         return "[Rectangle] " + "(" + str(self.id) + ") " + str(self.__x)\
                + "/" + str(self.__y) + " - " + str(self.__width)\
                + "/" + str(self.__height)
-    
+
     def update(self, *args, **kwargs):
         """Assigns an argument to each attribute
            Args:
@@ -130,6 +130,7 @@ class Rectangle(Base):
                     self.x = v
                 elif k == "y":
                     self.y = v
+
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle"""
         return {
